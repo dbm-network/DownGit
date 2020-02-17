@@ -33,22 +33,22 @@ downGitModule.factory('downGitService', [
                 info.author+"/"+info.repository+"/contents/";
             info.urlPostfix = "?ref="+info.branch;
 
-            if(!parameters.fileName || parameters.fileName==""){
+            //if(!parameters.fileName || parameters.fileName==""){
                 info.downloadFileName = info.rootName;
-            } else{
-                info.downloadFileName = parameters.fileName;
-            }
+            //} else{
+            //    info.downloadFileName = parameters.fileName;
+            //}
 
-            if(parameters.rootDirectory=="false"){
+            //if(parameters.rootDirectory=="false"){
                 info.rootDirectoryName = "";
 
-            } else if(!parameters.rootDirectory || parameters.rootDirectory=="" ||
-                parameters.rootDirectory=="true"){
-                info.rootDirectoryName = info.rootName+"/";
+            //} else if(!parameters.rootDirectory || parameters.rootDirectory=="" ||
+                //parameters.rootDirectory=="true"){
+                //info.rootDirectoryName = info.rootName+"/";
 
-            } else{
-                info.rootDirectoryName = parameters.rootDirectory+"/";
-            }
+            //} else{
+            //    info.rootDirectoryName = parameters.rootDirectory+"/";
+           // }
 
             return info;
         }
